@@ -1,0 +1,8 @@
+.faqquestion::after {
+    content: "\25BC";
+    position: absolute;
+    right: 0;
+}
+.faqquestion{
+    position: relative;
+}
