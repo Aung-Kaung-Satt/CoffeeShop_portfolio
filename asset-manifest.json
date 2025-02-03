@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Aung-Kaung-Satt/CoffeeShop_portfolio/static/css/main.750edb38.css",
+    "main.js": "/Aung-Kaung-Satt/CoffeeShop_portfolio/static/js/main.190300cc.js",
+    "static/js/453.80da4541.chunk.js": "/Aung-Kaung-Satt/CoffeeShop_portfolio/static/js/453.80da4541.chunk.js",
+    "index.html": "/Aung-Kaung-Satt/CoffeeShop_portfolio/index.html",
+    "main.750edb38.css.map": "/Aung-Kaung-Satt/CoffeeShop_portfolio/static/css/main.750edb38.css.map",
+    "main.190300cc.js.map": "/Aung-Kaung-Satt/CoffeeShop_portfolio/static/js/main.190300cc.js.map",
+    "453.80da4541.chunk.js.map": "/Aung-Kaung-Satt/CoffeeShop_portfolio/static/js/453.80da4541.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.750edb38.css",
+    "static/js/main.190300cc.js"
+  ]
+}
