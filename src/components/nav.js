@@ -44,11 +44,11 @@ const Nav = () => {
             FAQ
           </Link>
         </li>
-        <li className="px-5">
+        {/* <li className="px-5">
           <Link to="/about" className="">
             About
           </Link>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

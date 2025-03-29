@@ -9,7 +9,7 @@ const Counter = () => {
       setCount(count - 1);
     }
   };
-  const handleReset = () => setCount(0);
+  // const handleReset = () => setCount(0);
 
   const handleInputChange = (e) => {
     const value = parseInt(e.target.value, 10);
