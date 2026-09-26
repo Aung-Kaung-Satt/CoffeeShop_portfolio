@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
 };
 
 const Article = () => {
-  const ImageUrl = "../../images/black-coffee-stock.jpg";
+  const ImageUrl = `${process.env.PUBLIC_URL}/images/black-coffee-stock.jpg`;
   return (
     <div className="container mx-auto p-4">
       <div className="flex flex-col lg:flex-row lg:justify-between">
@@ -24,9 +24,9 @@ const Article = () => {
           </h1>
 
           <div className="flex h-16 justify-start gap-3">
-            <img src="../../images/images.png" alt="" />
-            <img src="../../images/images2.png" alt="" />
-            <img src="../../images/images3.png" alt="" />
+            <img src={`${process.env.PUBLIC_URL}/images/images.png`} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/images/images2.png`} alt="" />
+            <img src={`${process.env.PUBLIC_URL}/images/images3.png`} alt="" />
           </div>
           <p className="my-5">
             Lorem ipsum odor amet, consectetuer adipiscing elit. Facilisi
@@ -51,11 +51,14 @@ const Button = () => {
   const navigate = useNavigate();
 
   const goToMenu = () => {
-    navigate('/menu');
+    navigate("/menu");
   };
   return (
     <div className="flex justify-around items-center">
-      <button onClick={goToMenu} className="bg-[#884C46] hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-full w-40 transition-transform duration-300 ease-in-out transform hover:scale-125">
+      <button
+        onClick={goToMenu}
+        className="bg-[#884C46] hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-full w-40 transition-transform duration-300 ease-in-out transform hover:scale-125"
+      >
         Order Now
       </button>
       <ScoialButton />
@@ -64,7 +67,8 @@ const Button = () => {
 };
 
 const ScoialButton = () => {
-  const border = "flex justify-center items-center overflow-hidden border-solid border-2 rounded-full w-8 h-8 border-[#884C46] transition-transform duration-300 ease-in-out transform hover:scale-125";
+  const border =
+    "flex justify-center items-center overflow-hidden border-solid border-2 rounded-full w-8 h-8 border-[#884C46] transition-transform duration-300 ease-in-out transform hover:scale-125";
   const svgcolor = "text-[#884C46]";
 
   const insta = (
@@ -83,7 +87,7 @@ const ScoialButton = () => {
   );
   const fb = (
     <svg
-    className={svgcolor}
+      className={svgcolor}
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
@@ -97,7 +101,7 @@ const ScoialButton = () => {
   );
   const twitter = (
     <svg
-    className={svgcolor}
+      className={svgcolor}
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
@@ -111,7 +115,7 @@ const ScoialButton = () => {
   );
   const whatsapp = (
     <svg
-    className={svgcolor}
+      className={svgcolor}
       xmlns="http://www.w3.org/2000/svg"
       width="32"
       height="32"
@@ -125,10 +129,18 @@ const ScoialButton = () => {
   );
   return (
     <div className="flex gap-3">
-      <a href="www.google.com" className={border}>{insta}</a>
-      <a href="www.google.com" className={border}>{fb}</a>
-      <a href="www.google.com" className={border}>{twitter}</a>
-      <a href="#www.google.com" className={border}>{whatsapp}</a>
+      <a href="www.google.com" className={border}>
+        {insta}
+      </a>
+      <a href="www.google.com" className={border}>
+        {fb}
+      </a>
+      <a href="www.google.com" className={border}>
+        {twitter}
+      </a>
+      <a href="#www.google.com" className={border}>
+        {whatsapp}
+      </a>
     </div>
   );
 };

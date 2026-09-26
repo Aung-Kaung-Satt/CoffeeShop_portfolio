@@ -19,37 +19,37 @@ const coffeeMenu = [
     key: 1,
     type: "Espresso",
     price: 2.5,
-    srcpic: "../../images/espresso.jpg",
+    srcpic: `${process.env.PUBLIC_URL}/images/espresso.jpg`,
   },
   {
     key: 2,
     type: "Americano",
     price: 2.75,
-    srcpic: "../../images/americano.webp",
+    srcpic: `${process.env.PUBLIC_URL}/images/americano.webp`,
   },
   {
     key: 3,
     type: "Latte",
     price: 3.5,
-    srcpic: "../../images/latte.jpeg",
+    srcpic: `${process.env.PUBLIC_URL}/images/latte.jpeg`,
   },
   {
     key: 4,
     type: "Cappuccino",
     price: 3.75,
-    srcpic: "../../images/cappuccino.jpeg",
+    srcpic: `${process.env.PUBLIC_URL}/images/cappuccino.jpeg`,
   },
   {
     key: 5,
     type: "Mocha",
     price: 4.0,
-    srcpic: "../../images/mocha.png",
+    srcpic: `${process.env.PUBLIC_URL}/images/mocha.png`,
   },
   {
     key: 6,
     type: "Macchiato",
     price: 3.25,
-    srcpic: "../../images/Macchiato.avif",
+    srcpic: `${process.env.PUBLIC_URL}/images/Macchiato.avif`,
   },
 ];
 
